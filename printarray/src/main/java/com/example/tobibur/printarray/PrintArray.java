@@ -14,8 +14,9 @@ public class PrintArray {
 
     public static void diafunction(final Button symp, final String[] listItems, Context context){
         checkedItems = new boolean[listItems.length];
+        mUserItems = new ArrayList<>();
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(context);
-        mBuilder.setTitle("Please select the symptoms");
+        mBuilder.setTitle("Please select the items");
         mBuilder.setMultiChoiceItems(listItems, checkedItems, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int position, boolean isChecked) {
