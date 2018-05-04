@@ -26,7 +26,13 @@ Usage:
 
 Call this function below Onclick of a button:
 
+```Java
 PrintArray.diafunction(Button symp, String[] listItems, Context context)
+```
+
+Sreenshots:
+
+<img src="Screenshots/demo1.png" width="300"> <img src="Screenshots/demo2.png" width="300">
 
 
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
