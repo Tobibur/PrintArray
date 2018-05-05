@@ -32,7 +32,7 @@ PrintArray.diafunction(Button symp, String[] listItems, Context context)
 
 Sreenshots:
 
-<img src="screenshots/demo1.png" width="300"> <img src="screenshots/demo2.png" width="300">
+<img src="images/demo1.png" width="300"> <img src="images/demo2.png" width="300">
 
 
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
