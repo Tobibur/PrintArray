@@ -19,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-		implementation 'com.github.Tobibur:PrintArray:v1.0.0'
+		implementation 'com.github.Tobibur:PrintArray:v1.0.1'
 	}
 
 Usage:
@@ -41,5 +41,7 @@ To get the Ids of the items selected, call the method given below:
 String ids = PrintArray.getSelectedItemsId();
 ```
 
+
+[![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
 
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
