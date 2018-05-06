@@ -24,7 +24,7 @@ Step 2. Add the dependency
 
 Usage:
 
-Call this function below Onclick of a button:
+Call this method below Onclick of a button :
 
 ```Java
 PrintArray.diafunction(Button symp, String[] listItems, Context context)
@@ -33,6 +33,13 @@ PrintArray.diafunction(Button symp, String[] listItems, Context context)
 Sreenshots:
 
 <img src="images/demo1.png" width="300"> <img src="images/demo2.png" width="300">
+
+
+To get the Ids of the items selected, call the method given below:
+
+```Java
+String ids = PrintArray.getSelectedItemsId();
+```
 
 
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
