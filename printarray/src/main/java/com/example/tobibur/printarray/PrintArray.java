@@ -70,7 +70,7 @@ public class PrintArray {
         mDialog.show();
     }
 
-    private static String getSelectedItemsId(){
+    public static String getSelectedItemsId(){
         if(MEDno==""){
             return "Nothing Selected";
         }else{
