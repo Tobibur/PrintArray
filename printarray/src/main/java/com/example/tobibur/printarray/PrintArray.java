@@ -69,12 +69,4 @@ public class PrintArray {
         AlertDialog mDialog = mBuilder.create();
         mDialog.show();
     }
-
-    public static String getSelectedItemsId(){
-        if(MEDno==""){
-            return "Nothing Selected";
-        }else{
-            return MEDno;
-        }
-    }
 }

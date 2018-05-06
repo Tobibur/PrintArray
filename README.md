@@ -35,13 +35,4 @@ Sreenshots:
 <img src="images/demo1.png" width="300"> <img src="images/demo2.png" width="300">
 
 
-To get the Ids of the items selected, call the method given below:
-
-```Java
-String ids = PrintArray.getSelectedItemsId();
-```
-
-
-[![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
-
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
