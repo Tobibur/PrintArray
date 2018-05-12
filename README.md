@@ -19,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-		implementation 'com.github.Tobibur:PrintArray:v1.0.1'
+		implementation 'com.github.Tobibur:PrintArray:v1.0.0'
 	}
 
 Usage:
@@ -32,7 +32,8 @@ PrintArray.diafunction(Button symp, String[] listItems, Context context)
 
 Sreenshots:
 
-<img src="images/demo1.png" width="300"> <img src="images/demo2.png" width="300">
+<img src="images/demo1.png" width="214"> <img src="images/demo2.png" width="214">
+<img src="images/demo3.png" width="214"> <img src="images/demo4.png" width="214">
 
 
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
