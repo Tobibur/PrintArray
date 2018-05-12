@@ -10,13 +10,19 @@ import java.util.ArrayList;
 public class PrintArray {
     private static boolean[] checkedItems;
     private static ArrayList<Integer> mUserItems;
-    private static String MEDno="";
+    private static String title_default = "Please select the items";
 
-    public static void diafunction(final Button symp, final String[] listItems, Context context){
+    // setting AlertDialog title
+    public static void setBoxTitle(String title){
+        title_default = title;
+    }
+
+    // AlertDialog with checkBox method
+    public static void diaBox(final Button symp, final String[] listItems, Context context){
         checkedItems = new boolean[listItems.length];
         mUserItems = new ArrayList<>();
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(context);
-        mBuilder.setTitle("Please select the items");
+        mBuilder.setTitle(title_default);
         mBuilder.setMultiChoiceItems(listItems, checkedItems, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int position, boolean isChecked) {
@@ -42,7 +48,6 @@ public class PrintArray {
                         no = no + ", ";
                     }
                 }
-                MEDno = no;
                 symp.setText(item);
             }
         });
@@ -60,7 +65,6 @@ public class PrintArray {
                 for (int i = 0; i < checkedItems.length; i++) {
                     checkedItems[i] = false;
                     mUserItems.clear();
-                    MEDno="";
                     symp.setText("");
                 }
             }
