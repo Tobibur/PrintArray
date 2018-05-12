@@ -34,7 +34,7 @@ PrintArray.setBoxTitle("Your String here for title");
 2. Call this method below Onclick of a button :
 
 ```Java
-PrintArray.diafunction(Button symp, String[] listItems, Context context)
+PrintArray.diaBox(Button symp, String[] listItems, Context context)
 ```
 
 Sreenshots:
