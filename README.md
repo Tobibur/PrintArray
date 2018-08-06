@@ -22,6 +22,7 @@ Add it in your root build.gradle at the end of repositories:
 	dependencies {
 		implementation 'com.github.Tobibur:PrintArray:v1.2.1'
 	}
+[![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
 
 ## Usage:
 
@@ -49,5 +50,3 @@ PrintArray.diaRadioBox(Button symp, String[] listItems, Context context)
 <img src="images/c.png" width="214"> <img src="images/d.png" width="214">
 <img src="images/e.png" width="214">
 
-
-[![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
