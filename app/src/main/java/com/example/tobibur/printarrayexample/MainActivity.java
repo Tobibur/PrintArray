@@ -1,9 +1,11 @@
 package com.example.tobibur.printarrayexample;
 
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.tobibur.printarray.PrintArray;
 
@@ -21,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
         mCheckButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrintArray.diaCheckBox(mCheckButton,listItems,MainActivity.this);
+                PrintArray.diaCheckBox(mCheckButton, listItems, MainActivity.this, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MainActivity.this, "Ok yes", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
 
@@ -29,7 +36,12 @@ public class MainActivity extends AppCompatActivity {
         mRadioButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrintArray.diaRadioBox(mRadioButton,listItems,MainActivity.this);
+                PrintArray.diaRadioBox(mRadioButton, listItems, MainActivity.this, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }

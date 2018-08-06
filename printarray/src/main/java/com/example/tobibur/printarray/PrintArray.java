@@ -121,4 +121,82 @@ public class PrintArray {
         AlertDialog mDialog = mBuilder.create();
         mDialog.show();
     }
+
+    // AlertDialog with RadioButton method with custom on click
+    public static void diaRadioBox(final Button button, final String[] listItems, Context context, DialogInterface.OnClickListener positiveBtnListener){
+
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(context);
+        mBuilder.setTitle(title_default);
+        mBuilder.setSingleChoiceItems(listItems,singleCheckedItem, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                singleCheckedItem = i;
+                Log.d(TAG, "onClick: "+listItems[i]);
+                singleChoiceValue =  listItems[i];
+                button.setText(singleChoiceValue);
+            }
+        });
+        mBuilder.setCancelable(false);
+        mBuilder.setPositiveButton("OK", positiveBtnListener);
+
+        mBuilder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+
+        mBuilder.setNeutralButton("Clear all", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int which) {
+                singleCheckedItem = 0;
+            }
+        });
+
+        AlertDialog mDialog = mBuilder.create();
+        mDialog.show();
+    }
+
+    // AlertDialog with CheckBox method with custom on click
+    public static void diaCheckBox(final Button button, final String[] listItems, Context context, DialogInterface.OnClickListener positiveBtnListener){
+        checkedItems = new boolean[listItems.length];
+        mUserItems = new ArrayList<>();
+        AlertDialog.Builder mBuilder = new AlertDialog.Builder(context);
+        mBuilder.setTitle(title_default);
+        mBuilder.setMultiChoiceItems(listItems, checkedItems, new DialogInterface.OnMultiChoiceClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int position, boolean isChecked) {
+                if(isChecked){
+                    mUserItems.add(position);
+                }else{
+                    mUserItems.remove((Integer.valueOf(position)));
+                }
+            }
+        });
+
+        mBuilder.setCancelable(false);
+        mBuilder.setPositiveButton("OK", positiveBtnListener);
+
+        mBuilder.setNegativeButton("Dismiss", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+
+        mBuilder.setNeutralButton("Clear all", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int which) {
+                for (int i = 0; i < checkedItems.length; i++) {
+                    checkedItems[i] = false;
+                    mUserItems.clear();
+                    button.setText("");
+                }
+            }
+        });
+
+        AlertDialog mDialog = mBuilder.create();
+        mDialog.show();
+    }
+
 }
