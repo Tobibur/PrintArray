@@ -34,7 +34,13 @@ PrintArray.setBoxTitle("Your String here for title");
 ### 2. Call this method below Onclick of a button :
 
 ```Java
-PrintArray.diaBox(Button symp, String[] listItems, Context context)
+//For MultiChoice Checkbox Dialog
+PrintArray.diaCheckBox(Button symp, String[] listItems, Context context)
+```
+
+```Java
+//For SingleChoice RadioButton Dialog
+PrintArray.diaRadioBox(Button symp, String[] listItems, Context context)
 ```
 
 ## Sreenshots:
