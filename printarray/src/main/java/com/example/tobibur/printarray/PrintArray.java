@@ -24,8 +24,8 @@ public class PrintArray {
         title_default = title;
     }
 
-    // AlertDialog with checkBox method
-    public static void diaBox(final Button button, final String[] listItems, Context context){
+    // AlertDialog with CheckBox method
+    public static void diaCheckBox(final Button button, final String[] listItems, Context context){
         checkedItems = new boolean[listItems.length];
         mUserItems = new ArrayList<>();
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(context);
@@ -81,15 +81,15 @@ public class PrintArray {
         mDialog.show();
     }
 
-    //Single Choice Dialog
-    public static void diaSingleBox(final Button button, final String[] listItems, Context context){
+    // AlertDialog with RadioButton method
+    public static void diaRadioBox(final Button button, final String[] listItems, Context context){
 
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(context);
         mBuilder.setTitle(title_default);
         mBuilder.setSingleChoiceItems(listItems,singleCheckedItem, new DialogInterface.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialogInterface, int n) {
-                int i = ((AlertDialog)dialogInterface).getListView().getCheckedItemPosition();
+            public void onClick(DialogInterface dialogInterface, int i) {
+                singleCheckedItem = i;
                 Log.d(TAG, "onClick: "+listItems[i]);
                 singleChoiceValue =  listItems[i];
                 button.setText(singleChoiceValue);

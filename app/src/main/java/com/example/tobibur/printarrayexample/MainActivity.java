@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                PrintArray.diaBox(mButton,listItems,MainActivity.this);
+                PrintArray.diaRadioBox(mButton,listItems,MainActivity.this);
             }
         });
     }
