@@ -39,8 +39,9 @@ PrintArray.diaBox(Button symp, String[] listItems, Context context)
 
 ## Sreenshots:
 
-<img src="images/demo1.png" width="214"> <img src="images/demo2.png" width="214">
-<img src="images/demo3.png" width="214"> <img src="images/demo4.png" width="214">
+<img src="images/a.png" width="214"> <img src="images/b.png" width="214">
+<img src="images/c.png" width="214"> <img src="images/d.png" width="214">
+<img src="images/e.png" width="214">
 
 
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
