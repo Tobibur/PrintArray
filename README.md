@@ -58,8 +58,7 @@ PrintArray.diaCheckBox(Button button, String[] listItems, Context context,
 			new Onclicklistener(...));
 ```
 
-## Sreenshots:
+## License & Copyright
 
-<img src="images/a.png" width="214"> <img src="images/b.png" width="214">
-<img src="images/d.png" width="214"> <img src="images/e.png" width="214">
+Licensed under the [MIT License](LICENSE).
 
