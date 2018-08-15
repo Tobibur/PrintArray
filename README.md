@@ -1,6 +1,11 @@
 # PrintArray
 Android Library for Printing arrays in AlertDialog interface with checkbox.
 
+## Sreenshots:
+
+<img src="images/a.png" width="214"> <img src="images/b.png" width="214">
+<img src="images/d.png" width="214"> <img src="images/e.png" width="214">
+
 ## How to:
 
 To get a Git project into your build:
