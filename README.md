@@ -13,20 +13,19 @@ To get a Git project into your build:
 ### Step 1. Add the JitPack repository to your build file
 Add it in your root build.gradle at the end of repositories:
 ```Gradle
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
-```  
-  
+}
+```
 
 ### Step 2. Add the dependency
 ```Gradle
-	dependencies {
-		implementation 'com.github.Tobibur:PrintArray:v1.3.0'
-	}
+dependencies {
+	implementation 'com.github.Tobibur:PrintArray:v1.3.0'
+}
 ```
 [![](https://jitpack.io/v/Tobibur/PrintArray.svg)](https://jitpack.io/#Tobibur/PrintArray)
 
